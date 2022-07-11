@@ -6,6 +6,10 @@ void reversestring (string& str , int i , int j){
         return ;
     }
     swap(str[i],str[j]);
+    i++;
+    j++;
+    
+    reversestring(str , i , j);
 }
 
 int main(){
